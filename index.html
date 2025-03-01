@@ -1,399 +1,591 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <title>reveal.js</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <link rel="stylesheet" href="dist/reset.css" />
-        <link rel="stylesheet" href="dist/reveal.css" />
-        <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
+    <title>reveal.js</title>
 
-        <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
-        <link rel="stylesheet" href="plugin/chalkboard/style.css" />
-        <link rel="stylesheet" href="plugin/customcontrols/style.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
 
-    <body>
-        <div class="reveal">
-            <div class="slides">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
+    <link rel="stylesheet" href="plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="plugin/customcontrols/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Каскадные таблицы стилей</h1>
+                <img class="r-stretch" src="https://github.com/uidev-5" data-type="qrcode" />
+            </section>
+            <section>
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
+                    <h1>CSS</h1>
+                    <h3>Cascading Style Sheets</h3>
+                    <h4>каскадные таблицы стилей</h4>
+                    <p>
+                        язык, предназначенный для описания внешнего вида
+                        веб-страниц
+                    </p>
                 </section>
                 <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
+                    <h1>Принцип работы CSS</h1>
+                    <p>
+                        CSS-файл содержит набор правил, которые описывают,
+                        как определенные элементы HTML должны отображаться в
+                        браузере
+                    </p>
+                    <pre><code data-trim class="css">
+p {
+  color: blue;
+  font-size: 16px;
+}
+                        </code></pre>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>История развития CSS</h1>
+                    <h3>CSS1 (1996)</h3>
+                    <p>Первая спецификация CSS, включавшая базовые стили</p>
+                    <pre><code data-trim class="css">
+h1 {
+  color: blue;
+  font-size: 24px;
+}
+                        </code></pre>
+                    <i>
+                        базовая стилизация текста, цвета, отступов, шрифтов
+                    </i>
                 </section>
                 <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+                    <h1>История развития CSS</h1>
+                    <h3>CSS2 (1998)</h3>
+                    <p>
+                        Добавлены относительные единицы, медиа-типы,
+                        z-index, стили для таблиц
+                    </p>
+                    <pre><code data-trim class="css">
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightgray;
+  }
+}
+                        </code></pre>
+                    <i>
+                        запросы, позиционирование (
+                        <code>absolute</code>
+                        ,
+                        <code>relative</code>
+                        ,
+                        <code>fixed</code>
+                        ), псевдоэлементы (
+                        <code>::before</code>
+                        ,
+                        <code>::after</code>
+                        )
+                    </i>
                 </section>
                 <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
+                    <h1>История развития CSS</h1>
+                    <h3>CSS2.1 (2004)</h3>
+                    <p>
+                        Уточнён стандарт, исправлены ошибки CSS2. Поддержка
+                        <code>min-width</code>
+                        и
+                        <code>max-width</code>
+                    </p>
+                    <pre>
+div {
+  max-width: 400px;
+  min-width: 200px;
+}
+                        </pre>
+                    <i>улучшенная совместимость браузеров</i>
                 </section>
                 <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
+                    <h1>История развития CSS</h1>
+                    <h3>CSS3 (2011)</h3>
+                    <p>
+                        Разделён на модули: селекторы, анимации, градиенты,
+                        flexbox, grid
+                    </p>
+                    <pre><code data-trim class="css">
+div {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+  transition: all 0.3s ease-in-out;
+}
+                        </code></pre>
+                    <i>
+                        <ul>
+                            <li>Тени (box-shadow, text-shadow)</li>
+                            <li>Градиенты (linear-gradient)</li>
+                            <li>Анимации (@keyframes, animation)</li>
+                            <li>Гибкие макеты (flexbox, grid)</li>
+                        </ul>
+                    </i>
+                </section>
+                <section>
+                    <h1>История развития CSS</h1>
+                    <h3>CSS4 (развивающийся стандарт)</h3>
+                    <p>
+                        CSS4 как отдельная спецификация не существует, но
+                        есть улучшения
+                    </p>
+                    <pre><code data-trim class="css">
+:has(&gt; img) {
+  border: 2px solid red;
+}
+                        </code></pre>
+                    <i>
+                        <ul>
+                            <li>:has() – селектор родителя</li>
+                            <li>:is() и :where() – упрощение селекторов</li>
+                            <li>@layer – управление каскадом стилей</li>
+                            <li>color-mix() – смешивание цветов</li>
+                        </ul>
+                    </i>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Способы подключения стилей</h1>
+                    <h3>Внешний (External) CSS</h3>
                     <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
+                        Содержимое файла
+                        <code>index.html</code>
                     </h4>
+                    <p>
+                        Стили находятся в отдельном файле с расширением
+                        .css, который подключается в &lt;head&gt; через тег
+                        &lt;link&gt;
+                    </p>
+                    <pre><code data-trim class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Внешний CSS&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Заголовок&lt;/h1&gt;
+    &lt;p&gt;Текст абзаца&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
                 </section>
                 <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
+                    <h1>Способы подключения стилей</h1>
+                    <h3>Внешний (External) CSS</h3>
+                    <h4>
+                        Содержание файла
+                        <code>styles.css</code>
+                    </h4>
+                    <pre><code data-trim class="css">
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+p {
+    color: darkgray;
+    font-size: 16px;
+}
+                        </code></pre>
+                </section>
+
+                <section>
+                    <h1>Способы подключения стилей</h1>
+                    <h3>Внутренний (Embedded) CSS</h3>
+                    <h4>
+                        Содержание файла
+                        <code>styles.css</code>
+                    </h4>
+                    <pre><code data-trim class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Внутренний CSS&lt;/title&gt;
+    &lt;style&gt;
+        h1 {
+            color: red;
+        }
+
+        p {
+            font-size: 18px;
+            color: green;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Пример заголовка&lt;/h1&gt;
+    &lt;p&gt;Пример текста&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
                 </section>
                 <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
-                    <img
-                        class="r-stretch"
-                        src="https://goqr.me/"
-                        data-type="qrcode" />
+                    <h1>Способы подключения стилей</h1>
+                    <h3>Встроенный (Inline) CSS</h3>
+                    <pre><code data-trim class="css">
+&lt;p style="color: blue; font-size: 20px;"&gt;Пример встроенного CSS&lt;/p&gt;
+                        </code></pre>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Селекторы в CSS</h1>
+                    <h4>Селектор</h4>
+                    <p>правило, определяющее, к каким элементам HTML будут применяться заданные стили</p>
+                    <div class="border-b">выбирает элементы по тегам, классам, идентификаторам, атрибутам, их положению
+                        в структуре документа или состоянию</div>
+                    <pre><code data-trim class="css">
+header {
+    font-size: 18px;
+}
+
+#main-text {
+    font-size: 22px;
+}
+  
+.highlight {
+    color: red;
+}
+                        </code></pre>
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <h1>Селекторы в CSS</h1>
+                    <h3>Универсальный селектор (<code class="css">*</code>)</h3>
+                    <p>Применяет стили ко всем элементам на странице</p>
+                    <pre><code data-trim class="css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                    </code></pre>
                 </section>
-            </div>
+                <section>
+                    <h1>Селекторы в CSS</h1>
+                    <h3>Селекторы тегов (элементов)</h3>
+                    <p>Применяются ко всем HTML-элементам определенного типа</p>
+                    <pre><code data-trim class="css">
+p {
+    font-size: 18px;
+    color: darkgray;
+}
+  
+h1 {
+    color: blue;
+}
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Селекторы в CSS</h1>
+                    <h3>Селекторы классов (<code>.</code>)</h3>
+                    <p>Выбирают все элементы с указанным классом</p>
+                    <h4>Содержимое HTML файла</h4>
+                    <pre><code data-trim class="html">
+&lt;p class="highlight"&gt;Этот абзац будет выделен.&lt;/p&gt;
+                    </code></pre>
+                    <hr>
+                    <h4>Содержимое CSS файла</h4>
+                    <pre><code data-trim class="css">
+.highlight {
+    background-color: yellow;
+}
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Селекторы в CSS</h1>
+                    <h3>Селекторы идентификаторов (<code>#</code>)</h3>
+                    <p>Применяются к единственному элементу с указанным id</p>
+                    <h4>Содержимое HTML файла</h4>
+                    <pre><code data-trim class="html">
+&lt;p id="unique-text"&gt;Этот абзац имеет уникальный стиль.&lt;/p&gt;
+                    </code></pre>
+                    <hr>
+                    <h4>Содержимое CSS файла</h4>
+                    <pre><code data-trim class="css">
+#unique-text {
+    color: red;
+    font-weight: bold;
+}
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Селекторы в CSS</h1>
+                    <h3>Групповой селектор (<code>A, B, C</code>)</h3>
+                    <p>Позволяет одновременно применять стили к нескольким элементам</p>
+                    <pre><code data-trim class="css">
+h1, h2, p {
+    color: blue;
+}
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Селекторы в CSS</h1>
+                    <h3>Дочерний селектор (<code>A > B</code>)</h3>
+                    <p>Выбирает только прямых потомков указанного элемента</p>
+                    <h4>Содержимое HTML файла</h4>
+                    <pre><code data-trim class="html">
+&lt;div&gt;
+    &lt;p&gt;Этот абзац будет зеленым.&lt;/p&gt;
+    &lt;span&gt;
+      &lt;p&gt;А этот — нет, так как он не прямой потомок `div`.&lt;/p&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                    <hr>
+                    <h4>Содержимое CSS файла</h4>
+                    <pre><code data-trim class="css">
+div > p {
+    color: green;
+}
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Селекторы в CSS</h1>
+                    <h3>Соседние селекторы (<code>+</code> и <code>~</code>)</h3>
+                    <p><code class="html">A + B</code> - выбирает только следующий сразу за A элемент B</p>
+                    <p><code class="html">A ~ B</code> - выбирает все следующие элементы B после A</p>
+                    <h4>Содержимое HTML файла</h4>
+                    <pre><code data-trim class="html">
+&lt;h1&gt;Заголовок&lt;/h1&gt;
+&lt;p&gt;Этот параграф станет красным.&lt;/p&gt;
+&lt;p&gt;Этот — нет, так как не идет сразу после `h1`.&lt;/p&gt;
+                    </code></pre>
+                    <hr>
+                    <h4>Содержимое CSS файла</h4>
+                    <pre><code data-trim class="css">
+h1 + p {
+    color: red;
+}
+
+h1 ~ p {
+  color: blue;
+}
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Селекторы в CSS</h1>
+                    <h3>Соседние селекторы (<code>+</code> и <code>~</code>)</h3>
+                    <p><code class="html">A + B</code> - выбирает только следующий сразу за A элемент B</p>
+                    <p><code class="html">A ~ B</code> - выбирает все следующие элементы B после A</p>
+                    <h4>Содержимое HTML файла</h4>
+                    <pre><code data-trim class="html">
+&lt;h1&gt;Заголовок&lt;/h1&gt;
+&lt;p&gt;Этот параграф станет красным.&lt;/p&gt;
+&lt;p&gt;Этот — нет, так как не идет сразу после `h1`.&lt;/p&gt;
+                    </code></pre>
+                    <hr>
+                    <h4>Содержимое CSS файла</h4>
+                    <pre><code data-trim class="css">
+h1 + p {
+    color: red;
+}
+                    </code></pre>
+                </section>
+            </section>
         </div>
+    </div>
 
-        <script src="dist/reveal.js"></script>
-        <script src="plugin/notes/notes.js"></script>
-        <script src="plugin/markdown/markdown.js"></script>
-        <script src="plugin/highlight/highlight.js"></script>
-        <script src="plugin/qrcode/qrcode.js"></script>
-        <script src="plugin/mermaid/mermaid.js"></script>
-        <script src="plugin/chalkboard/plugin.js"></script>
-        <script src="plugin/customcontrols/plugin.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/qrcode/qrcode.js"></script>
+    <script src="plugin/mermaid/mermaid.js"></script>
+    <script src="plugin/chalkboard/plugin.js"></script>
+    <script src="plugin/customcontrols/plugin.js"></script>
 
-        <script>
-            tailwind.config = {
-                corePlugins: {
-                    preflight: false,
-                },
-            }
-        </script>
-        <script>
-            // More info about initialization & config:
-            // - https://revealjs.com/initialization/
-            // - https://revealjs.com/config/
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+        }
+    </script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
 
-            const colors = {
-                blue0: 'rgb(61, 89, 161)',
-                blue: 'rgb(122, 162, 247)',
-                cyan: 'rgb(125, 207, 255)',
-                magenta: 'rgb(187, 154, 247)',
-                orange: 'rgb(255, 158, 100)',
-                yellow: 'rgb(224, 175, 104)',
-                green: 'rgb(158, 206, 106)',
-                teal: 'rgb(26, 188, 156)',
-                red: 'rgb(255, 117, 127)',
-                red1: 'rgb(219, 75, 75)',
-                fg: 'rgb(192, 202, 245)',
-                bg: 'rgb(26, 27, 38)',
-                transparent: '#00000000',
-            }
+        const colors = {
+            blue0: 'rgb(61, 89, 161)',
+            blue: 'rgb(122, 162, 247)',
+            cyan: 'rgb(125, 207, 255)',
+            magenta: 'rgb(187, 154, 247)',
+            orange: 'rgb(255, 158, 100)',
+            yellow: 'rgb(224, 175, 104)',
+            green: 'rgb(158, 206, 106)',
+            teal: 'rgb(26, 188, 156)',
+            red: 'rgb(255, 117, 127)',
+            red1: 'rgb(219, 75, 75)',
+            fg: 'rgb(192, 202, 245)',
+            bg: 'rgb(26, 27, 38)',
+            transparent: '#00000000',
+        }
 
-            Reveal.initialize({
-                hash: true,
-                // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [
-                    RevealMarkdown,
-                    RevealHighlight,
-                    RevealNotes,
-                    RevealMermaid,
-                    RevealChalkboard,
-                    RevealCustomControls,
-                ],
-                slideNumber: true,
-                customcontrols: {
-                    controls: [
-                        {
-                            icon: '<div></div>',
-                            title: 'Clear canvas (DEL)',
-                            action: 'RevealChalkboard.clear();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle chalkboard (B)',
-                            action: 'RevealChalkboard.toggleChalkboard();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle notes canvas (C)',
-                            action: 'RevealChalkboard.toggleNotesCanvas();',
-                        },
-                    ],
-                },
-                chalkboard: {
-                    boardmarkerWidth: 5,
-                    boardmarkers: [
-                        {
-                            color: colors.bg,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.fg,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.blue,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.red,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.green,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.yellow,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.teal,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.orange,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                    ],
-                    chalks: [
-                        {
-                            color: colors.bg,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.fg,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.blue,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.red,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.green,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.yellow,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.teal,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.orange,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                    ],
-                },
-                mermaid: {
-                    securityLevel: 'loose',
-                    theme: 'dark',
-                    themeVariables: {
-                        darkMode: true,
-                        textColor: colors.fg,
-                        background: colors.bg,
-                        mainBkg: colors.bg,
-                        lineColor: colors.fg,
+        Reveal.initialize({
+            hash: true,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMermaid,
+                RevealChalkboard,
+                RevealCustomControls,
+            ],
+            slideNumber: true,
+            customcontrols: {
+                controls: [
+                    {
+                        icon: '<div></div>',
+                        title: 'Clear canvas (DEL)',
+                        action: 'RevealChalkboard.clear();',
                     },
+                    {
+                        icon: '<div></div>',
+                        title: 'Toggle chalkboard (B)',
+                        action: 'RevealChalkboard.toggleChalkboard();',
+                    },
+                    {
+                        icon: '<div></div>',
+                        title: 'Toggle notes canvas (C)',
+                        action: 'RevealChalkboard.toggleNotesCanvas();',
+                    },
+                ],
+            },
+            chalkboard: {
+                boardmarkerWidth: 5,
+                boardmarkers: [
+                    {
+                        color: colors.bg,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.fg,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.blue,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.red,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.green,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.yellow,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.teal,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.orange,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                ],
+                chalks: [
+                    {
+                        color: colors.bg,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.fg,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.blue,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.red,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.green,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.yellow,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.teal,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.orange,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                ],
+            },
+            mermaid: {
+                securityLevel: 'loose',
+                theme: 'dark',
+                themeVariables: {
+                    darkMode: true,
+                    textColor: colors.fg,
+                    background: colors.bg,
+                    mainBkg: colors.bg,
+                    lineColor: colors.fg,
                 },
-            })
-        </script>
-    </body>
-</html>
+            },
+        })
+    </script>
+</body>
 
+</html>
